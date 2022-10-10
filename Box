@@ -1,0 +1,95 @@
+/ CSS
+
+body
+{
+    font-size: 20px;
+}
+
+#container
+{
+    background-color: white;
+    width: 300px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: #214a42;
+    -webkit-box-shadow: 10px 10px 300px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 10px 300px 0px rgba(0,0,0,1);
+    box-shadow: 10px 10px 300px 0px rgba(0,0,0,1);
+}
+
+input[type=text],
+input[type=password]
+{
+    width: 300px;
+    background-color: #efefef;
+    color: #666;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 10px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus
+{
+    -webkit-box-shadow: -21px -8px 17px -3px rgba(204,240,217,1);
+    -moz-box-shadow: -21px -8px 17px -3px rgba(24,240,217,1);
+    box-shadow: -21px -8px 17px -3px rgba(204,240,217,1);
+    border: 2px solid #a5cda5;
+    background-color: #e9f3e9;
+    color: #2b6e61;
+}
+
+input[type=submit]
+{
+    width: 300px;
+    background-color: #2b6e61;
+    font-size: 20px;
+    color: white;
+    padding: 15px 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    outline: none;
+}
+
+input[type-submit]:focus
+{
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+    box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+
+input[type-submit]:hover
+{
+    background-color: #2b6e61;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dwa.css">
+    <title>Raz</title>
+</head>
+<body>
+    <div id="container">
+    <form>
+    <input type="text" placeholder="login" onfocus="this.placeholder=''"
+    onblur="this.placeholder='login'">
+    <input type="password" placeholder="hasło" onfocus="this.placeholder=''"
+    onblur="this.palceholder='haslo'">
+    <input type="submit" value="Zaloguj się">
+    </form>
+    </div>
+</body>
+</html>
